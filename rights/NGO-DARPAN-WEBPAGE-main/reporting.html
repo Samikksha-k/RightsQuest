@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Reporting abuse</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel = "stylesheet" href="css/style.css">
+    <script src="./javascript/script.js"></script>
+  </head>
+  <body style="background-color: black; color: white;">
+    <header class="header" style="background-color: #22a2b0;">
+        <a href='#' class="logo">
+          <img src=./images/govlogo.png alt="">>
+          <img src="./images/nggo.png" alt="">
+          <img src="./images/Logo.png" alt="">
+        </a>
+        <nav class="navbar">
+          <a href="#home">home</a>
+          <a href="#about us">about us</a>
+          <a href="#menu">Learn More</a>
+          <a href="#contact">contact</a>
+        </nav>
+    
+        <div class="icons">
+          <div class="fas fa-search" id="search-btn"></div>
+        
+        
+        <div class="search-form">
+          <input type="search" id="search-box" placeholder="search here...">
+          <label for="search-box" class="fas fa-search"></label>
+        </div>
+    </header>
+
+    <section class="body-container">
+        <div class="left">
+            <div class="left-text">
+                <h2>Report Abuse</h2>
+                <p>Please use this form to submit a report regarding a violation of the applicable Terms of Service on a domain name, web site, or system maintained through subsidiaries or brands operated by Newfold Digital, Inc. This form is only for reporting certain violations of our Terms of Service. If you are a customer and need assistance with your services, please contact customer service or login to your account.&nbsp;<br></p>
+                <p>We strive to make the Web a better place and consider the abuse of our services a serious matter. We investigate and record all reports of abuse submitted to us. Where appropriate, we may act if a violation of any of our Terms of Service is confirmed or when required to do so if an activity violates the policies of ICANN or appropriate registry.&nbsp;<br></p>
+                <p>Once submission of an abuse report is received, we will create a unique case ID in our system that we will use to track the report. This unique ID will be referenced in any subsequent correspondence to you relating to your report. We may request additional information from you about your report. However, please note that any response will be provided at our sole discretion, and we may not be able to provide you with specific updates in response to your report due to privacy reasons.&nbsp;<br></p>
+            </div>
+            <div class="helplines">
+                <h1 class="head-h1">HELPLINES</h1>
+                <div class="helpline-container">
+                    <div>
+                        <h1>POLICE</h1>
+                        <p>Phone no: 100</p>
+                    </div>
+                </div>
+                <div class="helpline-container">
+                    <div>
+                        <h1>WOMEN HELPLINE</h1>
+                        <p>Phone no: 1091</p>
+                    </div>
+                </div>
+                <div class="helpline-container">
+                    <div>
+                        <h1>Women’s Helpline (Domestic Abuse)</h1>
+                        <p>Phone no: 181</p>
+                    </div>
+                </div>
+                <div class="helpline-container">
+                    <div>
+                        <h1>Senior Citizen Helpline</h1>
+                        <p>Phone no: 1091 or 1291</p>
+                    </div>
+                </div>
+                <div class="helpline-container">
+                    <div>
+                        <h1>Children In Difficult Situation</h1>
+                        <p>Phone no: 1098</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="right">
+            <form enctype="multipart/form-data" method="POST" action="Form.php" data-parsley-validate="" novalidate="">
+                <ul>
+                    <li class="abuse">
+                        <label for="firstName">First Name*</label>
+                        <input type="text" id="firstName" name="firstName" placeholder="John" required="">
+                    </li>
+                    <li class="abuse">
+                        <label for="lastName">Last Name*</label>
+                        <input type="text" id="lastName" name="lastName" placeholder="Doe" required="">
+                    </li>
+                    <li class="abuse">
+                        <label for="email">Email*</label>
+                        <input type="email" id="email" name="email" placeholder="john.doe@example.com" required="">
+                    </li>
+                    <li class="abuse">
+                        <label for="url">Domain with Abuse*</label>
+                        <input type="url" id="url" name="url" placeholder="https://web.com" required="">
+                    </li>
+                    <li class="abuse">
+                        <label for="inquiryType">Inquiry Type*</label>
+                        <div class="select">
+                            <select id="inquiryType" name="inquiryType" class="inquiryType" required="">
+                                <option disabled="" selected="" value="">please choose one</option>
+                                <option>Adult Content or CSAM</option>
+                                <option>Copyright Infringement </option>
+                                <option>Domain Protected by Privacy or Statutory Masking</option>
+                                <option>Fraudulent business scheme</option>
+                                <option>Inappropriate, Violent or Offensive Content</option>
+                                <option>Invalid or inaccurate Whois information</option>
+                                <option>Malware</option>
+                                <option>Phishing</option>
+                                <option>Rogue pharmacy</option>
+                                <option>Software piracy</option>
+                                <option>Spam</option>
+                                <option>Trademark Infringement</option>
+                            </select>
+                        </div>
+                    </li>
+                    <li class="abuse">
+                        <label for="brand">Brand*</label>
+                        <div class="select">
+                            <select id="brand" class="brand" name="brand" required="">
+                                <option disabled="" selected="" value="">please choose one</option>
+                                <option>Bluehost</option>
+                                <option>FastDomain</option>
+                                <option>HostGator</option>
+                                <option>HostMonster</option>
+                                <option>Just Host</option>
+                                <option>NameJet</option>
+                                <option>Networksolutions.com</option>
+                                <option>Register.com</option>
+                                <option>Snapnames</option>
+                                <option>Web.com</option>
+                            </select>
+                        </div>
+                    </li>
+                    <li class="abuse">
+                        <label for="comments">Comments</label>
+                        <textarea id="comments" name="comments" class="comments" maxlength="250" wrap="hard" placeholder="250 max character limit"></textarea>
+                    </li>
+                    <li class="abuse">
+                        <label for="attachment" style="font-size: 2rem;font-weight: 500;">Attach File</label>
+                        <span class="agreement" style="font-size: 1.2rem; padding-bottom: 1rem;">One attachment per submission, no larger than 1mb. Only upload a jpg, pdf, doc or txt file.</span>
+                        <input type="file" id="attachment" name="attachment" data-parsley-max-file-size="1000" data-parsley-fileextension="png, jpg, pdf, doc, docx, txt" accept="image/*, .png, .jpg, .pdf, .txt, .doc,.docx,.xml,application/msword,application/vnd.openxmlformats-officedocument.wordprocessingml.document">
+                    </li>
+                    <li style="display: flex; flex-direction: row; position:relative;" class="checkboxLi">
+                        <span class="checkboxContainer" style="margin-right: 10px;">
+                            <input type="checkbox" id="agreementStatement" name="agreementStatement" class="checkbox" required="" data-parsley-multiple="agreementStatement">
+                            <span class="checkmark"></span>
+                        </span>
+                        <label for="agreementStatement" class="agreement" style="font-size: 1.2rem;">I hereby represent and warrant that all statements made above in my submission are truthful and accurate.*</label>
+                    </li>
+                    <li class="abuse">
+                        <div id="captcha"><div style="width: 304px; height: 78px;"><div><iframe title="reCAPTCHA" width="304" height="78" role="presentation" name="a-pv5reiw2016t" frameborder="0" scrolling="no" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-top-navigation allow-modals allow-popups-to-escape-sandbox" src="https://www.google.com/recaptcha/api2/anchor?ar=1&amp;k=6Lc2vj8lAAAAAF4yi77gg_-kxh2q4FyIBHUK9pES&amp;co=aHR0cHM6Ly9uZXdmb2xkLmNvbTo0NDM.&amp;hl=en&amp;v=pxZcVU8Dk73FyvFvdCgp2MSG&amp;size=normal&amp;cb=7o2ejv70hh90"></iframe></div><textarea id="g-recaptcha-response" name="g-recaptcha-response" class="g-recaptcha-response" style="width: 250px; height: 40px; border: 1px solid rgb(193, 193, 193); margin: 10px 25px; padding: 0px; resize: none; display: none;"></textarea></div><iframe style="display: none;"></iframe></div>
+                        <div class="recaptchaRequired">
+                            Please confirm that you're not a robot.
+                        </div>
+                    </li>
+                    <button class="submit-btn" type="submit">Report Abuse</button>
+                    <p>* required</p>
+                    <input type="hidden" class="inquiryEmail" name="inquiryEmail" value="abuse-trademark@newfold.com">
+                </ul>
+            </form>
+        </div>
+    </section>
+</body>
+</html>
